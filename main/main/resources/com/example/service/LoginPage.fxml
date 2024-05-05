@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="1227.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service.LoginController">
+   <children>
+      <Button fx:id="btnBack" layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnBackClicked" text="Back" />
+      <GridPane alignment="CENTER" layoutX="126.0" layoutY="106.0" prefHeight="469.0" prefWidth="1002.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.94146728515625" minWidth="10.0" prefWidth="335.2462463378906" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.609619140625" minWidth="10.0" prefWidth="309.58563232421875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="481.80780029296875" minWidth="10.0" prefWidth="358.41436767578125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="228.01654815673828" minHeight="10.0" prefHeight="159.9947509765625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="287.17945861816406" minHeight="6.483451843261719" prefHeight="80.45196533203125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="287.17945861816406" minHeight="10.0" prefHeight="61.975982666015625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="192.58035278320312" minHeight="10.0" prefHeight="62.9947509765625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="192.58035278320312" minHeight="10.0" prefHeight="129.5052490234375" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="STAFF LOGIN" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="fldPass" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TextField fx:id="fldLogin" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btnAuth" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0" text="Login" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
